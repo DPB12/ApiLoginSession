@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- This element is used to mount your app. -->
+    <div class="container">
+      <div class="row mt-3 mb-3">
+        <div class="col-md-6">
+          <h2>Añadir post</h2>
+          <form action="" class="add-post-form">
+            <div class="form-group mt-2 mb-2">
+              <label for="title">Titulo</label>
+              <input type="text" class="form-control" id="title-post" />
+            </div>
+            <div class="form-group mt-2 mb-2">
+              <label for="content-post">Contenido post</label>
+              <textarea
+                class="form-control"
+                rows="5"
+                id="content-post"
+              ></textarea>
+            </div>
+            <div class="form-group mt-2 mb-2" id="submitForm">
+              <input
+                type="submit"
+                class="btn btn-primary mt-2 mb-2"
+                value="Añadir post"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="post-list row mt-5"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
